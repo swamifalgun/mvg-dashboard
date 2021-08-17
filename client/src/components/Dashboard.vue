@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- {{ dateFormatter(getTrams[0]["departureTime"]) }} -->
-
-    <!-- <h1 v-if="getUbahns.length > 0">got ubahns</h1> -->
     <div class="header">
       <h3 class="date">{{ getDate }}</h3>
       <h3 class="time">{{ time }}</h3>
@@ -193,6 +190,7 @@ td:nth-child(3) {
   font-size: 32px;
   font-weight: bold;
   padding: 20px;
+  width: 100%;
 }
 
 .main-content {
@@ -353,5 +351,11 @@ td:nth-child(3) {
   margin-left: 5px;
   width: 150px;
   cursor: pointer;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .canvas {
+    flex-direction: column !important;
+  }
 }
 </style>
