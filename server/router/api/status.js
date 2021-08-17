@@ -7,7 +7,7 @@ const utc = require("dayjs/plugin/utc");
 dayjs.extend(utc);
 
 const admin = require("firebase-admin");
-const serviceAccount = require("../../../serviceAccountKey.json");
+// const serviceAccount = require("../../../serviceAccountKey.json");
 
 require("dotenv").config();
 
