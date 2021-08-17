@@ -20,6 +20,7 @@ router.get("/trams", async (req, res) => {
 
   // Get trams
   let trams = departures.filter((e) => e["product"] == "TRAM");
+  // let ubhans = departures.filter((e) => e["product"] == "UBAHN");
 
   res.send({ trams: trams });
 });
