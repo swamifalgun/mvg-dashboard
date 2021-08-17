@@ -1,0 +1,32 @@
+<template>
+  <div id="app">
+    <Weather />
+  </div>
+</template>
+
+<script>
+import Weather from "./components/Dashboard.vue";
+
+export default {
+  name: "App",
+  components: {
+    Weather,
+  },
+};
+</script>
+
+<style>
+body {
+  margin: 0px;
+}
+#app {
+  font-family: "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #1e1714;
+  /* margin-top: 60px; */
+  font-size: 32px;
+  margin: 0px !important;
+}
+</style>
